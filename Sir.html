@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loading</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        background-color: skyblue;
+        overflow: hidden visible;
+      }
+
+      .g {
+        position: absolute;
+        margin-top: 790px;
+        left: 0;
+        width: 100%;
+      }
+
+      .m {
+        position: absolute;
+        height: 100px;
+        margin-top: 700px;
+        /*animation-name: mario;
+        	animation-duration: 9s;
+        	animation-fill-mode: forwards;*/
+        animation: mario 2s forwards linear, jump 0.7s 2s forwards ease-in;
+      }
+
+      .c {
+        width: 700px;
+        height: 200px;
+        position: absolute;
+        margin-left: 100px;
+        animation-name: cloud;
+        animation-duration: 9s;
+        animation-fill-mode: forwards;
+      }
+
+      .c2 {
+        width: 700px;
+        height: 200px;
+        position: absolute;
+        margin-left: 1200px;
+        animation-name: cloud2;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+      }
+
+      .b {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        margin: 430px 0 0 840px;
+        animation-name: block;
+      }
+
+      @keyframes cloud {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-20px);
+        }
+      }
+
+      @keyframes cloud2 {
+        from {
+          transform: translateX(200px);
+        }
+        to {
+          transform: translateX(180px);
+        }
+      }
+
+      @keyframes mario {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(850px);
+        }
+      }
+
+      /* @keyframes jump{
+        	from{transform: translateX(850px) translateY(0);}
+        	to{transform: translateX(850px) translateY(-180px);}
+        }*/
+
+      @keyframes jump {
+        0% {
+          transform: translateX(850px) translateY(0);
+        }
+        50% {
+          transform: translateX(850px) translateY(-180px);
+        }
+        100% {
+          transform: translateX(850px) translateY(0);
+        }
+      }
+
+      @keyframes up {
+        0% {
+          transform: translateY(0);
+          opacity: 0;
+          color: orange;
+        }
+        50% {
+          transform: translateY(-70px);
+          opacity: 0;
+          color: orange;
+        }
+        100% {
+          transform: translateY(-60px);
+          opacity: 1;
+          color: orange;
+        }
+      }
+
+      .no {
+        position: absolute;
+        width: 400px;
+        height: 100px;
+        background-color: transparent;
+        /*background-color: #fff;*/
+        margin: 430px 0 0 780px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h1 {
+        text-decoration: none;
+        font-size: 4rem;
+        color: transparent;
+        animation-name: up;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.9s;
+        animation-timing-function: ease-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img class="g" src="Img/ground.jpg" alt="ground" />
+    <img class="m" src="Img/Merio2.png" alt="mario" />
+    <img class="c" src="Img/cloud.png" alt="cloud" />
+    <img class="c2" src="Img/cloud.png" alt="cloud2" />
+    <img class="b" src="Img/block2.jpg" alt="block" />
+
+    <div class="no">
+      <a href="Sir2.html"><h1>Continue</h1></a>
+    </div>
+  </body>
+</html>

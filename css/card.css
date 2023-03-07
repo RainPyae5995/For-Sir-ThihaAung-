@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #6AE0D1, #ABDBF7, #6477ED, #6ae0d08d);
+    background-size: 300% 300%;
+    animation: bg 12s ease-in-out infinite;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    background: linear-gradient(143.73deg, #bd89f366, #9dffdb66, #68f79873, #6ae0d077);
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+
+    transition: 0.5s;
+    animation: bg 12s ease-in-out infinite;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card:hover {
+    height: 480px;
+}
+
+.imgbx {
+    position: absolute;
+    left: 50%;
+    top: -70px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    overflow: hidden;
+
+    border-radius: 50%;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+}
+
+.imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container .del {
+    padding: 40px;
+    width: 100%;
+    align-items: center;
+    transform: translateY(70px);
+    transition: 0.5s;
+}
+
+.card:hover .container .del {
+    transform: translateY(0px);
+}
+
+.container .del .content {
+    text-align: justify;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+
+.content {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container label {
+    width: 100px;
+    height: 100px;
+    background-color: #E3540B;
+    color: #212121;
+    transition: 0.5s;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+}
+
+label:hover {
+    background-color: #6AE0D1;
+    color: #E3540B;
+}
+
+.container .del a:hover {
+    background-color: #6AE0D1;
+    color: #E3540B;
+}
+
+.container a {
+    width: 100px;
+    height: 100px;
+    background-color: #E3540B;
+    color: #212121;
+    text-decoration: none;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+    margin: 0 0 0 40px;
+    transition: 0.5s;
+}
+
+.container i {
+    margin-left: 10px;
+}
+
+input:checked+.content {
+    display: block;
+    transition: 0.5s;
+}
+
+input {
+    display: none;
+}

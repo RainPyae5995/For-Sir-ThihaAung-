@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nann Oo Hlaing</title>
+    <link rel="stylesheet" href="css/nann.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body id="halo">
+
+    <div class="onee" id="onee" onclick="left()">
+        <div class="eee"></div>
+        <div class="fff"></div>
+        <div class="ggg"></div>
+        <div class="aaa">
+            <img src="Img/aaa.png" alt="leftLove">
+        </div>
+        <div class="ccc"></div>
+    </div>
+
+
+    <div class=" twoo" id="twoo" onclick="left()">
+        <div class="hhh"></div>
+        <div class="iii"></div>
+        <div class="jjj"></div>
+
+        <div class="bbb">
+            <img src="Img/bbb.png" alt="rightLove">
+        </div>
+        <div class="ddd"></div>
+
+
+    </div>
+
+
+
+    <div class="inside">
+        <div class="one">
+            <a href="batch1.html"><i id="back" class="fa-solid fa-reply-all"></i></i></a>
+
+            <div class="dMode">
+                <p>Dark Mode</p>
+                <input type="radio" name="dmode" onclick="myFunctionone()">&nbsp;On &nbsp;&nbsp;
+                <input type="radio" name="dmode" checked onclick="myFunctiontwo()">&nbsp;Off
+
+            </div>
+
+
+        </div>
+        <div class="two">
+            <h1>Thanks a million for teaching us</h1>
+        </div>
+        <div class="three">
+            <img src="Img/sir.jpg" alt="sayar">
+            <div class="text">
+                ပထမဦးဆုံးပြောပြချင်တာကတော့ ဆရာ့ကိုအရမ်းအရမ်းကျေးဇူးတင်တယ်ဆိုတာပါ။ အခုလို online ကနေ
+                စိတ်ရှည်ရှည် နဲ့ အလကားသင်ပေးဖို့ကတော်ရုံမရနိုင်လို့ပါ။ ဆရာသင်ကြားပေးလို့ ကျနော်ဆို coding
+                ကိုဘာမှမသိရာကနေ ခုဆို နည်းနည်းစီရေးနိုင် လာပါပြီ။ ဆရာသင်တာလည်း နားလည်လွယ်ပြီး
+                သင်တဲ့တောက်လျှောက်လဲသေချာလိုက်လုပ်ခဲ့ပါတယ်။
+                စာသင်ရုံနဲ့မပြီးပဲ ဘဝအတွက်လိုအပ်တာတွေ အတန်ူမစခင် နည်းနည်းစီထည့်ပြောပေးလို့လည်း ကျေးဇူးတင်ပါတယ်ဆရာ။
+                စာစသင်တုန်းက
+                စကားနည်းတဲ့အထဲမှာပါလို့ ဆရာကျနော့်ကို အတန်းအလယ်လောက်ထိသတိမထားမိဘူးထင်ပါတယ် Group PJ တွေစရေးဖို့ Team
+                ခွဲတော့မှ ကျနော့်ကို girl လို့ပဲထင်နေခဲ့တာလို့ ဆရာပြောတော့ ရီမိပါသေးတယ်။ ဆရာ ဘဝနဲ့ဆန္ဒ
+                တစ်ထပ်ထဲကျပြီး ဖြစ်ချင်တာတွေ အမြဲဖြစ်နိုင်ပါစေဆရာ။ အချစ်စစ်နဲ့လဲ တစ်ဆုံးတိုင်လက်တွဲရပါစေ။
+                မန္တလေးရောက်ရင်လဲ လာတွေ့ပါမယ်။ ဆရာလည်း ရန်ကုန်ရောက်ဖြစ်ရင်ပြောပါဆရာ လာတွေ့ပါမယ်ဗျ။ <br><b>
+                    All the best to you, Sir Thiha Aung. 💙🍀</b></pre>
+
+
+
+                <br>
+                <span><b>Nann Oo Hlaing</b>
+                    Hlaing Township , Yangon <br>
+                    09 964 274 512</span>
+
+
+
+
+            </div>
+        </div>
+
+
+
+</body>
+
+<script>
+    function left() {
+        document.getElementById("onee").style.transform = "translateX(-100%)";
+        document.getElementById("onee").style.transition = "5s";
+        document.getElementById("twoo").style.transform = "translateX(100%)";
+        document.getElementById("twoo").style.transition = "5s";
+    }
+    // function myFunction() {
+    //     document.body.classList.toggle("dark-mode");
+    // }
+    function myFunctionone() {
+        document.getElementById("halo").style.color = "white";
+        document.getElementById("halo").style.backgroundColor = "#333";
+        document.getElementById("back").style.color = "white";
+    }
+    function myFunctiontwo() {
+        document.getElementById("halo").style.color = "black";
+        document.getElementById("halo").style.backgroundColor = "skyblue";
+        document.getElementById("back").style.color = "black";
+    }
+</script>
+
+</html>

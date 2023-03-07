@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I2X003</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 195vh;
+        font-family: "Gloock", serif;
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        background: #e8e8e8;
+      }
+
+      .title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title h1 {
+        width: 50%;
+        text-align: center;
+        background-image: linear-gradient(
+          90deg,
+          #9b59b6 0%,
+          #00a5e7 50%,
+          #5ad1cd 100%
+        );
+
+        letter-spacing: 0.2rem;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        gap: 30px;
+      }
+
+      .container .card {
+        width: 310px;
+        height: 374px;
+        background: linear-gradient(145deg, #e2e2e2, #f2f2f3, #fff);
+        box-shadow: inset 5px 5px 10px #cccccc, inset -5px -5px 10px #f4f4f4;
+        clip-path: polygon(
+          40px 0%,
+          100% 0,
+          100% calc(100% - 40px),
+          calc(100% - 40px) 100%,
+          0 100%,
+          0% 40px
+        );
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card .pic {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card .pic img {
+        margin-top: 1.6rem;
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .card .icn {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card .info {
+        text-align: center;
+        margin-top: 0.4em;
+        background-image: linear-gradient(
+          -90deg,
+          #9b59b6 0%,
+          #00a5e7 50%,
+          #5ad1cd 100%
+        );
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .card .info > span {
+        font-weight: bolder;
+        font-size: 1.2em;
+        letter-spacing: 0.1rem;
+      }
+
+      .card .info > p {
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+      }
+
+      .card .clk {
+        margin-top: 1em;
+        padding: 0.5em 2em;
+        border-radius: 25px;
+        background: #e7e7e7;
+      }
+
+      .card .clk a {
+        text-decoration: none;
+        background-image: linear-gradient(
+          145deg,
+          #9b59b6 0%,
+          #00a5e7 50%,
+          #5ad1cd 100%
+        );
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 0.1rem;
+      }
+
+      .card .clk:active {
+        box-shadow: inset 3px 3px 3px #fff, inset -3px -3px 3px #b6b6b6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Meet the I2X003</h1>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="pic">
+          <img src="Img/MSA.jpg" alt="one" width="50%" />
+        </div>
+        <div class="info">
+          <span>Min Set Aung</span>
+          <p>Future Developers</p>
+        </div>
+        <div class="clk">
+          <a href="mlight.html">Click</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="pic">
+          <img src="Img/KSH.jpg" alt="one" width="50%" />
+        </div>
+        <div class="info">
+          <span>Kyaw Saw Hein</span>
+          <p>Future Developers</p>
+        </div>
+        <div class="clk">
+          <a href="kshein.html">Click</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="pic">
+          <img src="Img/DLL.jpg" alt="one" width="50%" />
+        </div>
+        <div class="info">
+          <span>Aung Hein</span>
+          <p>Future Developers</p>
+        </div>
+        <div class="clk">
+          <a href="#">Click</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="pic">
+          <img src="Img/PHK.jpg" alt="one" width="50%" />
+        </div>
+        <div class="info">
+          <span>Pyae Hein Khant</span>
+          <p>Future Developers</p>
+        </div>
+        <div class="clk">
+          <a href="card.html">Click</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="pic">
+          <img src="Img/Dav.jpg" alt="one" width="50%" />
+        </div>
+        <div class="info">
+          <span>Aung Phone Pyae</span>
+          <p>Future Developers</p>
+        </div>
+        <div class="clk">
+          <a href="david.html">Click</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="pic">
+          <img src="Img/Horan.jpg" alt="one" width="50%" />
+        </div>
+        <div class="info">
+          <span>Aye Moe Pyae Khine</span>
+          <p>Future Developers</p>
+        </div>
+        <div class="clk">
+          <a href="#">Click</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="pic">
+          <img src="Img/me33.jpg" alt="one" width="50%" />
+        </div>
+        <div class="info">
+          <span>Moe Pyae Pyae Naing</span>
+          <p>Future Developers</p>
+        </div>
+        <div class="clk">
+          <a href="mppn.html">Click</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- #353535 -->
+  <!-- #282828 -->
+</html>

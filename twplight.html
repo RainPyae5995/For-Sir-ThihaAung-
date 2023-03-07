@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From TWP</title>
+    <link href="Img/thet.jpg" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .key {
+        width: 100%;
+        position: absolute;
+        font-size: 2.8rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0 5px;
+        color: transparent;
+      }
+      span {
+        background: linear-gradient(270deg, rgb(24, 229, 229), red, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        background-size: 2000px 2000px;
+        animation: rgb 5s infinite linear;
+      }
+
+      ul li {
+        background: linear-gradient(
+          270deg,
+          rgb(9, 219, 219),
+          rgb(213, 66, 229),
+          rgb(57, 209, 30)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        background-size: 2000px 2000px;
+        animation: rgba 5s infinite linear;
+      }
+
+      ul {
+        animation-name: ani;
+        animation-duration: 4s;
+      }
+
+      @keyframes ani {
+        from {
+          transform: translateY(500px);
+        }
+        to {
+          transform: translateX(0px);
+        }
+      }
+
+      @keyframes rgb {
+        0% {
+          background-position: 0 0;
+        }
+        25% {
+          background-position: 0 100%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        75% {
+          background-position: 100% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      @keyframes rgba {
+        0% {
+          background-position: 0 0;
+        }
+        25% {
+          background-position: 0 100%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        75% {
+          background-position: 100% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            height: {
+              128: "35rem",
+            },
+            width: {
+              128: "80rem",
+            },
+
+            lineHeight: {
+              "extra-loose": "2.5",
+              12: "5rem",
+            },
+            boxShadow: {
+              "3xl": [
+                "-1px 3px 13px 5px rgba(0,0,0,0.47)",
+                "-1px 3px 13px 5px rgba(0,0,0,0.47)",
+                " -1px 3px 13px 5px rgba(0,0,0,0.47)",
+              ],
+            },
+            animation: {
+              opacity: "opacity 3s linear infinite",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">
+    <div class="key">
+      <a href="batch1.html">IX9001-Batch1</a>
+    </div>
+    <div
+      class="flex justify-center items-center text-ellipsis overflow-hidden font-sans"
+    >
+      <div
+        class="bg-white mt-20 block shadow-xl shadow-red-500 w-128 h-128 rounded-[50px] bg-center bg-cover"
+        style="background-image: url('Img/circle.png')"
+      >
+        <div class="flex justify-around items-center cursor-pointer">
+          <div class="mb-[50px]">
+            <span class="text-5xl ml-24 leading-12 font-bold"
+              >Dear Teacher,</span
+            >
+            <ul class="ml-[100px] text-2xl leading-8 font-semibold">
+              <li>I would like to thank you for the time and effort</li>
+              <li>you put into teaching us. I learned alot from you</li>
+              <li>and you gave me the confidence to dream big.</li>
+              <li>Thanks alot ...</li>
+            </ul>
+          </div>
+
+          <img class="w-[600px]" src="Img/sayar.png" alt="ggg" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

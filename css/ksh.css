@@ -1,0 +1,25 @@
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Img/istockphoto-852103246-612x612.jpg);
+  background-size: cover;
+}
+
+.head {
+  color: beige;
+  height: 50px;
+}
+
+.left {
+  font-family: "Pacifico", cursive;
+  font-size: large;
+  color: azure;
+}
+
+.end {
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  color: bisque;
+  font-weight: 10px;
+}

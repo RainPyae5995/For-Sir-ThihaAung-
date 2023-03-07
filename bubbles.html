@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Everyone From ขนม</title>
+    <link href="Img/me33.jpg" rel="icon" type="image/x-icon" />
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.875rem;
+        background: #e0e0e0;
+        font-family: "Shantell Sans", cursive;
+        text-transform: capitalize;
+      }
+
+      .drop {
+        width: 300px;
+        height: 300px;
+        box-shadow: inset 20px 20px 20px rgb(190, 190, 190, 0.5),
+          20px 20px 20px #b8b8b8, 15px 15px 20px #bebebe90,
+          inset -15px -15px 20px #ffffff70;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+      }
+
+      .drop:nth-child(1) {
+        border-radius: 45% 55% 53% 47% / 46% 53% 47% 54%;
+      }
+
+      .drop:nth-child(3) {
+        border-radius: 51% 49% 42% 58% / 55% 61% 39% 45%;
+      }
+
+      .drop::before {
+        content: "";
+        position: absolute;
+        background: #fff;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        top: 60px;
+        left: 50px;
+        opacity: 0.9;
+      }
+
+      .drop::after {
+        content: "";
+        position: absolute;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top: 45px;
+        left: 80px;
+        opacity: 0.9;
+      }
+
+      span {
+        font-size: 5rem;
+        color: #d50000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="drop">
+      <!-- <p>Html</p> -->
+      <p>Sir</p>
+    </div>
+    <span>+</span>
+    <div class="drop">
+      <!-- <p>Css</p> -->
+      <p>Us</p>
+    </div>
+    <span>=</span>
+    <div class="drop">
+      <p style="font-size: 3rem; text-align: center; margin: 8px 0">
+        Future <br />
+        Developers
+      </p>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

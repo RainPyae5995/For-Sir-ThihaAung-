@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#anni {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+}
+
+p {
+    color: grey;
+}
+
+.box div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    
+    background-color: transparent;
+    /* border: 6px solid #424341;
+    border-radius: 100px; */
+}
+
+.box div i{
+    color: grey;
+    font-size: 27px;
+}
+
+.box div:nth-child(1) {
+    top: 12%;
+    left: 22%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+    top: 42%;
+    left: 42%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+    top: 82%;
+    left: 62%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+
+.box div:nth-child(11){
+    top: 30%;
+    left: 50%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(12){
+    top: 77%;
+    left: 67%;
+    animation: animate 8s linear infinite;
+}
+
+.box div:nth-child(13){
+    top: 26%;
+    left: 90%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(14){
+    top: 10%;
+    left: 88%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(15){
+    top: 45%;
+    left: 55%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(16){
+    top: 45%;
+    left: 20%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(17){
+    top: 55%;
+    left: 10%;
+    animation: animate 5s linear infinite;
+}
+
+.box div:nth-child(18){
+    top: 50%;
+    left: 18%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(19){
+    top: 70%;
+    left: 85%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(20){
+    top: 78%;
+    left: 93%;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translate(0) rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#text .to {
+    width: 100%;
+    height: 70px;
+    /* background-color: bisque; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+#text .tot {
+    width: 100%;
+    height: 70px;
+    /* background-color: bisque; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+#text .to .tox {
+    width: 130px;
+    height: 70px;
+    /* background-color: rgb(133, 88, 29); */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text .to .tox h1{
+    font-size: 32px;
+    color: bisque;
+}
+
+#text .to .tox .pica {
+    width: 60px;
+    height: 60px;
+    /* background-color: aquamarine; */
+}
+
+#text .to .tox .pica img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+#text .to .back {
+    width: 70px;
+    height: 70px;
+    /* background-color: brown; */
+}
+
+#text .to .back img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+#text .to .back img:hover {
+    box-shadow: 0px 2px 11px 2px rgba(139, 138, 138, 0.75);
+}
+
+#text .tot .tox {
+    width: 150px;
+    height: 70px;
+    /* background-color: rgb(133, 88, 29); */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text .tot .tox h3{
+    font-size: 26px;
+    color: bisque;
+}
+
+#text .tot .tox .pica {
+    width: 70px;
+    height: 70px;
+    /* background-color: aquamarine; */
+}
+
+#text .tot .tox .pica img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+#text .tot .back {
+    width: 70px;
+    height: 70px;
+    /* background-color: brown; */
+}
+
+#text .letter {
+    width: 100%;
+    height: 400px;
+    /* background-color: rgb(207, 126, 27); */
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#text .letter .cute {
+    width: 1100px;
+    height: 480px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 11px 2px rgba(252, 251, 251, 0.75);
+    /* background-image: url('../img/bear.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* filter: blur(5px); */
+}
+
+#text .letter .cute p:hover{
+    filter: blur(0);
+    transition: all 0.3s;
+}
+
+
+
+#text .letter .cute p {
+    text-indent: 100px;
+    padding-top: 20px;
+    filter: blur(5px);
+    transition: 0.3s;
+}
+

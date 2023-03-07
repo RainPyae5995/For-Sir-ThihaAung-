@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: linear-gradient(
+    80deg,
+    rgba(179, 209, 221, 1) 50%,
+    rgba(0, 212, 255, 0.9808298319327731) 100%
+  );
+  --box-color: #14232b;
+}
+
+body {
+  width: 100%;
+  height: 200vh;
+  background: var(--bg-color);
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 10px;
+}
+
+.icon i {
+  font-size: 1.5rem;
+  padding: 10px 10px;
+  background-color: #d2dddd;
+  color: #0c0d0d;
+  border-radius: 50%;
+}
+
+.icon .fa-moon {
+  padding: 10px 13px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.batch1,
+.profile,
+.batch2 {
+  width: 300px;
+  height: 350px;
+}
+
+.top {
+  width: 100%;
+  height: 40%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px 0px 0 0px;
+  box-shadow: 7px 7px 20px #d2dddd;
+}
+
+.batch1 span,
+.batch2 span {
+  width: 100px;
+  height: 100px;
+  background-color: #00a5e7;
+  border-radius: 50%;
+  text-decoration: none;
+  /* font-size: 1.2rem; */
+  /* font-weight: 600; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px #0c0d0d;
+}
+
+.end {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--box-color);
+  border-radius: 0 0px 90px 0px;
+  box-shadow: 7px 7px 20px #0c0d0d;
+}
+
+h2 {
+  color: #08adee;
+}
+
+p {
+  color: aliceblue;
+}
+
+.container a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 90px 10px 90px 10px;
+  background-color: #08adee;
+  color: #0c0d0d;
+  box-shadow: 2px 2px 8px #565a5c;
+  transition: all 0.5s;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #00a5e7;
+  box-shadow: 2px 2px 10px #0c0d0d;
+}
+
+span:hover,
+h2:hover,
+p:hover,
+img:hover,
+a:hover {
+  cursor: pointer;
+  color: #f0f1f1;
+  opacity: 0.9;
+}
+
+a:hover {
+  transform: translateY(5px);
+  color: #f0f1f1;
+}
+
+.box {
+  border: 1px solid #0b162a;
+  margin: 10px auto;
+  width: 400px;
+  height: 550px;
+  border-radius: 20px;
+  box-shadow: 0px -1px 18px;
+  position: absolute;
+  left: 35%;
+  top: 107%;
+}
+
+.iconbox .fa-arrow-left {
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 18px;
+  color: #0c0d0d;
+}
+
+.iconbox .fa-heart {
+  margin-top: 30px;
+  margin-left: 76%;
+  font-size: 18px;
+}
+
+.fa-ellipsis-v {
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.image {
+  position: absolute;
+  left: 37%;
+  top: 12%;
+}
+
+.image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 1px 10px 20px;
+}
+
+.fa-check {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+}
+
+.check {
+  position: absolute;
+  left: 73%;
+  top: 68%;
+  color: aliceblue;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: rgb(43, 135, 189);
+  text-align: center;
+}
+
+.image h2 {
+  color: #0c0d0d;
+  font-weight: normal;
+  position: absolute;
+  top: 105%;
+  left: -20%;
+  width: 200px;
+}
+
+.image h3 {
+  color: #020c11;
+  font-weight: normal;
+  position: absolute;
+  top: 148%;
+  left: -60%;
+  width: 500px;
+  font-size: 16px;
+}
+
+.image .one {
+  color: #0b162a;
+  font-weight: normal;
+  position: absolute;
+  top: 185%;
+  left: -105%;
+  width: 300px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.image .two {
+  color: #0b162a;
+  font-weight: normal;
+  position: absolute;
+  top: 230%;
+  left: -157%;
+  width: 300px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.image .three {
+  color: #0b162a;
+  font-weight: normal;
+  position: absolute;
+  top: 260%;
+  left: -177%;
+  width: 300px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.image .four {
+  color: #0b162a;
+  font-weight: normal;
+  position: absolute;
+  top: 290%;
+  left: -125%;
+  width: 300px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.image .five {
+  color: #0b162a;
+  font-weight: normal;
+  position: absolute;
+  top: 320%;
+  left: -130%;
+  width: 300px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.one i,
+.two i,
+.three i,
+.four i,
+.five i {
+  margin-right: 5px;
+}
+
+hr {
+  width: 350px;
+  margin: 100% 25px;
+}
+
+.facebook {
+  position: absolute;
+  left: 23%;
+  top: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.telegram {
+  position: absolute;
+  left: 43%;
+  top: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github {
+  position: absolute;
+  left: 63%;
+  top: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face,
+.tele,
+.git {
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  box-shadow: 2px 5px 10px #565a5c;
+}
+
+.face i,
+.tele i,
+.git i {
+  color: #00a5e7;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+
+.face i:hover,
+.tele i:hover,
+.git i:hover {
+  color: #000808;
+}
